@@ -7,7 +7,7 @@ def initialize(name)
 end
 
 def parse
-  @emails
+    @emails.split(/(?:,\s)|\s/).uniq
 end
 
   end
